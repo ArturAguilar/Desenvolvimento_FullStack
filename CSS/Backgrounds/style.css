@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 30px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 18px;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+h2 {
+    color: #1565c0;
+    margin-bottom: 8px;
+}
+
+.exemplo {
+    width: 320px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #222;
+    border: 1px solid #bbb;
+    background: #eee;
+    box-shadow: 1px 1px 4px #ddd;
+    display: flex;
+    align-items: center;
+}
+
+/* background-color */
+.cor {
+    background-color: #ffe082;
+}
+
+/* background-image */
+.imagem {
+    background-image: url('https://www.w3schools.com/css/img_lights.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+/* background-repeat */
+.repetir {
+    background-image: url('https://www.w3schools.com/css/img_lights.jpg');
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+    color: #fff;
+}
+
+/* background-attachment */
+.fixo {
+    background-image: url('https://www.w3schools.com/css/img_lights.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* background-position */
+.posicao {
+    background-image: url('https://www.w3schools.com/css/img_lights.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 100px 80px;
+    color: #222;
+}
+
+/* background (shorthand) */
+.atalho {
+    background: #b3e5fc url('https://www.w3schools.com/css/img_lights.jpg') no-repeat left top / 80px 60px;
+    color: #222;
+}

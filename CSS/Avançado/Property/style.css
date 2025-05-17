@@ -1,0 +1,19 @@
+@property --minha-cor {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #3498db;
+}
+
+.caixa {
+  width: 120px;
+  height: 120px;
+  margin: 40px auto;
+  background: var(--minha-cor);
+  border-radius: 12px;
+  transition: --minha-cor 1s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.caixa:hover {
+  --minha-cor: #e67e22;
+}

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border: 3px solid #fff;
+}
+.redonda {
+  border-radius: 50%;
+}
+.oval {
+  border-radius: 50% / 30%;
+}
+.arredondada {
+  border-radius: 20px;
+}
+.triangulo {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

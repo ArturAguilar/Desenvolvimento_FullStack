@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
+  perspective: 600px; /* Adiciona perspectiva para efeito 3D */
+}
+.box {
+  width: 80px;
+  height: 80px;
+  background: #3498db;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.8s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.rotate3d {
+  transform: rotateY(45deg) rotateX(20deg);
+}
+.translate3d {
+  transform: translate3d(30px, 0, 40px);
+}
+.scale3d {
+  transform: scale3d(1.2, 1, 1.5);
+}
+.perspective3d {
+  transform: rotateY(60deg);
+}

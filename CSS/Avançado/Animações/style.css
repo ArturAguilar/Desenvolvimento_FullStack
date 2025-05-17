@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.box {
+  width: 120px;
+  height: 80px;
+  background: #9b59b6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.animacao {
+  animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0) scale(1);
+    background: #9b59b6;
+  }
+  50% {
+    transform: translateX(80px) scale(1.2) rotate(10deg);
+    background: #e67e22;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    background: #9b59b6;
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.box {
+  width: 80px;
+  height: 80px;
+  background: #3498db;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.5s;
+}
+.translate { transform: translate(40px, 0); }
+.rotate    { transform: rotate(30deg); }
+.scale     { transform: scale(1.3, 0.7); }
+.reflect   { transform: scaleX(-1); }
+.shear     { transform: skew(25deg, 0); }

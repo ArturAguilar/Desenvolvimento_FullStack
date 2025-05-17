@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.filtro {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: filter 0.4s;
+}
+.grayscale {
+  filter: grayscale(100%);
+}
+.blur {
+  filter: blur(3px);
+}
+.sepia {
+  filter: sepia(100%);
+}
+.invert {
+  filter: invert(100%);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de Texto em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Alinhamento de Texto em CSS</h1>
+
+    <section>
+        <h2>text-align</h2>
+        <div class="exemplo alinhamento-esquerda">Alinhado à esquerda</div>
+        <div class="exemplo alinhamento-centro">Alinhado ao centro</div>
+        <div class="exemplo alinhamento-direita">Alinhado à direita</div>
+        <div class="exemplo alinhamento-justificado">Texto justificado: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec urna euismod, dictum erat at, dictum enim.</div>
+    </section>
+
+    <section>
+        <h2>text-align-last</h2>
+        <div class="exemplo alinhamento-last">Este texto tem várias linhas para demonstrar o uso de <b>text-align-last</b>. A última linha está alinhada à direita.</div>
+    </section>
+
+    <section>
+        <h2>direction e unicode-bidi</h2>
+        <div class="exemplo direcao-rtl">Texto com direção da direita para a esquerda (RTL): مرحبا بالعالم</div>
+        <div class="exemplo direcao-ltr">Texto com direção da esquerda para a direita (LTR): Hello, world!</div>
+        <div class="exemplo bidi-override">Texto com <b>unicode-bidi: bidi-override</b>: abcDEF</div>
+    </section>
+
+    <section>
+        <h2>vertical-align</h2>
+        <div class="exemplo vertical">
+            <span class="superior">Superior</span>
+            <span class="meio">Meio</span>
+            <span class="inferior">Inferior</span>
+            <img src="https://www.w3schools.com/css/smiley.gif" alt="smile" class="img-vertical">
+        </div>
+    </section>
+</body>
+</html>

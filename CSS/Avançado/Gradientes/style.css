@@ -1,0 +1,34 @@
+.gradiente-linear {
+    width: 350px;
+    height: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6600, #0066cc);
+}
+
+.gradiente-radial {
+    width: 350px;
+    height: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: radial-gradient(circle, #ff6600, #0066cc);
+}
+
+.gradiente-conico {
+    width: 350px;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: conic-gradient(from 0deg, #ff6600, #0066cc, #ff6600);
+}

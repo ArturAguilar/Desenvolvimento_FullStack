@@ -1,0 +1,15 @@
+.multiplos-fundos {
+    width: 350px;
+    height: 200px;
+    border: 10px solid #333;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    background-image: 
+        url('https://www.w3schools.com/css/img_lights.jpg'),
+        url('https://www.w3schools.com/css/img_forest.jpg');
+    background-size: 100px 80px, cover;
+    background-origin: content-box, border-box;
+    background-clip: padding-box, border-box;
+    background-repeat: no-repeat, no-repeat;
+}

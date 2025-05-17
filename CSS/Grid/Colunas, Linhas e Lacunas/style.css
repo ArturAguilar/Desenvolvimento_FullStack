@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  grid-template-rows: 80px 80px;         /* 2 linhas de 80px */
+  gap: 20px 40px;                        /* 20px entre linhas, 40px entre colunas */
+  max-width: 600px;
+  margin: 40px auto;
+  background: #f2f2f2;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.item {
+  background: #3498db;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}

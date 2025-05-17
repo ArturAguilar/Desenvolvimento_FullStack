@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de &lt;input&gt; em HTML</title>
+    <style>
+        form {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            margin-top: 4px;
+            padding: 4px 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Principais tipos de &lt;input&gt; em HTML</h2>
+    <form>
+        <!-- Botão -->
+        <label>Button:
+            <input type="button" value="Clique aqui">
+        </label>
+
+        <!-- Caixa de seleção -->
+        <label>Checkbox:
+            <input type="checkbox" name="aceito"> Aceito os termos
+        </label>
+
+        <!-- Cor -->
+        <label>Color:
+            <input type="color" name="cor">
+        </label>
+
+        <!-- Data -->
+        <label>Date:
+            <input type="date" name="data">
+        </label>
+
+        <!-- Data e hora local -->
+        <label>Datetime-local:
+            <input type="datetime-local" name="datahora">
+        </label>
+
+        <!-- Email -->
+        <label>Email:
+            <input type="email" name="email" placeholder="exemplo@email.com">
+        </label>
+
+        <!-- Arquivo -->
+        <label>File:
+            <input type="file" name="arquivo">
+        </label>
+
+        <!-- Oculto -->
+        <input type="hidden" name="usuarioId" value="123">
+
+        <!-- Imagem como botão de envio -->
+        <label>Image:
+            <input type="image" src="https://www.w3schools.com/html/img_submit.gif" alt="Enviar" width="48" height="24">
+        </label>
+
+        <!-- Mês -->
+        <label>Month:
+            <input type="month" name="mes">
+        </label>
+
+        <!-- Número -->
+        <label>Number:
+            <input type="number" name="quantidade" min="1" max="10">
+        </label>
+
+        <!-- Senha -->
+        <label>Password:
+            <input type="password" name="senha">
+        </label>
+
+        <!-- Rádio -->
+        <label>Radio:
+            <input type="radio" name="sexo" value="M"> Masculino
+            <input type="radio" name="sexo" value="F"> Feminino
+        </label>
+
+        <!-- Range -->
+        <label>Range:
+            <input type="range" name="volume" min="0" max="100">
+        </label>
+
+        <!-- Reset -->
+        <label>Reset:
+            <input type="reset" value="Limpar formulário">
+        </label>
+
+        <!-- Search -->
+        <label>Search:
+            <input type="search" name="busca" placeholder="Pesquisar...">
+        </label>
+
+        <!-- Submit -->
+        <label>Submit:
+            <input type="submit" value="Enviar formulário">
+        </label>
+
+        <!-- Telefone -->
+        <label>Tel:
+            <input type="tel" name="telefone" placeholder="(99) 99999-9999">
+        </label>
+
+        <!-- Texto -->
+        <label>Text:
+            <input type="text" name="nome" placeholder="Seu nome">
+        </label>
+
+        <!-- Hora -->
+        <label>Time:
+            <input type="time" name="hora">
+        </label>
+
+        <!-- URL -->
+        <label>URL:
+            <input type="url" name="site" placeholder="https://">
+        </label>
+
+        <!-- Semana -->
+        <label>Week:
+            <input type="week" name="semana">
+        </label>
+    </form>
+
+    <!-- 
+        Principais tipos de <input>:
+        - button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week
+    -->
+</body>
+</html>

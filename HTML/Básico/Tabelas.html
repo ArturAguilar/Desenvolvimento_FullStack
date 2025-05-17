@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        th, td {
+            border: 1px solid #888;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+        /* Estilo para a primeira coluna usando colgroup */
+        .col-nome {
+            background-color: #d1e7dd;
+        }
+    </style>
+</head>
+<body>
+    <!-- O elemento <table> é usado para criar tabelas em HTML. -->
+    <h2>Exemplo de Tabela</h2>
+
+    <table>
+        <colgroup>
+            <col class="col-nome">
+            <col>
+            <col>
+        </colgroup>
+        <caption>Informações de Alunos</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>22</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>25</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>20</td>
+                <td>Belo Horizonte</td>
+            </tr>
+            <!-- Exemplo de colspan -->
+            <tr>
+                <td colspan="2">Total de alunos</td>
+                <td>3</td>
+            </tr>
+            <!-- Exemplo de rowspan -->
+            <tr>
+                <td rowspan="2">Lucas</td>
+                <td>23</td>
+                <td>Curitiba</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Porto Alegre</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 
+        - <colgroup> permite aplicar estilos a colunas inteiras.
+        - <col class="col-nome"> aplica a classe CSS à primeira coluna.
+        - colspan="2" faz a célula ocupar duas colunas.
+        - rowspan="2" faz a célula ocupar duas linhas.
+    -->
+</body>
+</html>

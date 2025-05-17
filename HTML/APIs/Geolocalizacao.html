@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalização em HTML</title>
+    <style>
+        #local {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 1.1em;
+        }
+        button {
+            padding: 6px 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo de Geolocalização</h2>
+    <button onclick="obterLocalizacao()">Mostrar minha localização</button>
+    <div id="local"></div>
+
+    <script>
+        function obterLocalizacao() {
+            const localDiv = document.getElementById('local');
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function(pos) {
+                        localDiv.innerHTML = 
+                            "Latitude: " + pos.coords.latitude + "<br>" +
+                            "Longitude: " + pos.coords.longitude;
+                    },
+                    function(error) {
+                        localDiv.innerHTML = "Não foi possível obter a localização.";
+                    }
+                );
+            } else {
+                localDiv.innerHTML = "Geolocalização não suportada pelo navegador.";
+            }
+        }
+    </script>
+
+    <!-- 
+        - Usa a API navigator.geolocation para obter latitude e longitude do usuário.
+        - O usuário precisa permitir o acesso à localização.
+    -->
+</body>
+</html>

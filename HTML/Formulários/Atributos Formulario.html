@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Formulário em HTML</title>
+    <style>
+        form {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            margin-top: 4px;
+            padding: 4px 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Atributos de Formulário em HTML</h2>
+
+    <form action="/enviar" method="post" autocomplete="on" target="_blank">
+        <!-- action: URL para onde os dados serão enviados -->
+        <!-- method: método HTTP (get ou post) -->
+        <!-- autocomplete: sugere preenchimento automático -->
+        <!-- target: onde abrir a resposta (ex: _blank para nova aba) -->
+
+        <label for="nome">Nome (required, maxlength):</label>
+        <input type="text" id="nome" name="nome" required maxlength="20" placeholder="Digite seu nome">
+
+        <label for="email">Email (type, required):</label>
+        <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+
+        <label for="idade">Idade (min, max):</label>
+        <input type="number" id="idade" name="idade" min="1" max="120">
+
+        <label for="senha">Senha (disabled):</label>
+        <input type="password" id="senha" name="senha" disabled value="123456">
+
+        <label for="pais">País (readonly):</label>
+        <input type="text" id="pais" name="pais" value="Brasil" readonly>
+
+        <label for="cor">Cor favorita (value):</label>
+        <input type="color" id="cor" name="cor" value="#ff0000">
+
+        <label for="arquivo">Arquivo (multiple):</label>
+        <input type="file" id="arquivo" name="arquivo" multiple>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <!-- 
+        Principais atributos de formulário:
+        - action: URL de envio dos dados
+        - method: método HTTP (get/post)
+        - autocomplete: ativa/desativa preenchimento automático
+        - target: onde abrir a resposta
+        - required: campo obrigatório
+        - maxlength/minlength: tamanho máximo/mínimo
+        - min/max: valor mínimo/máximo
+        - disabled: desabilita o campo
+        - readonly: somente leitura
+        - value: valor inicial
+        - multiple: permite múltiplos arquivos/seleções
+        - placeholder: texto de dica no campo
+        - type: tipo do campo (text, email, number, etc)
+    -->
+</body>
+</html>

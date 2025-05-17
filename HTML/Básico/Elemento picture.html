@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento &lt;picture&gt;</title>
+</head>
+<body>
+    <!-- O elemento <picture> permite exibir diferentes imagens dependendo do tamanho da tela ou do tipo de dispositivo. -->
+    <h2>Exemplo do elemento &lt;picture&gt;</h2>
+
+    <picture>
+        <!-- Exibe esta imagem se a tela for até 600px de largura -->
+        <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width: 600px)">
+        <!-- Exibe esta imagem se a tela for até 1200px de largura -->
+        <source srcset="https://www.w3schools.com/html/img_flowers.jpg" media="(max-width: 1200px)">
+        <!-- Imagem padrão caso nenhuma das condições acima seja atendida -->
+        <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Exemplo de uso do picture" style="width:100%;">
+    </picture>
+
+    <!-- 
+        - <picture> permite definir múltiplas fontes de imagem para diferentes situações.
+        - <source> define as condições e a imagem a ser usada.
+        - <img> é a imagem padrão, exibida se nenhuma condição for satisfeita.
+        - O navegador escolhe a imagem mais adequada de acordo com o dispositivo ou largura da tela.
+    -->
+</body>
+</html>

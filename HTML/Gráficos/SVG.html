@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento &lt;svg&gt; em HTML</title>
+    <style>
+        svg {
+            border: 2px solid #888;
+            margin-top: 16px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo do elemento &lt;svg&gt;</h2>
+
+    <!-- O elemento <svg> permite criar gráficos vetoriais diretamente no HTML -->
+    <svg width="300" height="150">
+        <!-- Retângulo azul -->
+        <rect x="20" y="20" width="100" height="50" fill="#2196f3" />
+        <!-- Círculo vermelho -->
+        <circle cx="200" cy="75" r="40" fill="#e53935" />
+        <!-- Texto -->
+        <text x="60" y="140" font-family="Arial" font-size="18" fill="#333">
+            SVG em ação!
+        </text>
+    </svg>
+
+    <!-- 
+        - <svg> define uma área para gráficos vetoriais.
+        - <rect> desenha um retângulo.
+        - <circle> desenha um círculo.
+        - <text> insere texto.
+        - Outros elementos: <line>, <ellipse>, <polygon>, <path>, etc.
+    -->
+</body>
+</html>

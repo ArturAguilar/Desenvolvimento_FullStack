@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos do &lt;input&gt; em HTML</title>
+    <style>
+        form {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            margin-top: 4px;
+            padding: 4px 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Atributos do &lt;input&gt; em HTML</h2>
+    <form>
+        <!-- required: campo obrigatório -->
+        <label>Nome (required):
+            <input type="text" name="nome" required>
+        </label>
+
+        <!-- placeholder: dica no campo -->
+        <label>Email (placeholder):
+            <input type="email" name="email" placeholder="exemplo@email.com">
+        </label>
+
+        <!-- maxlength e minlength: tamanho máximo e mínimo -->
+        <label>Usuário (minlength, maxlength):
+            <input type="text" name="usuario" minlength="3" maxlength="10">
+        </label>
+
+        <!-- disabled: desabilitado -->
+        <label>Campo desabilitado (disabled):
+            <input type="text" name="desabilitado" disabled value="Não editável">
+        </label>
+
+        <!-- readonly: somente leitura -->
+        <label>Somente leitura (readonly):
+            <input type="text" name="somenteLeitura" value="Apenas leitura" readonly>
+        </label>
+
+        <!-- value: valor inicial -->
+        <label>Valor inicial (value):
+            <input type="text" name="valor" value="Valor padrão">
+        </label>
+
+        <!-- min e max: valor mínimo e máximo -->
+        <label>Idade (min, max):
+            <input type="number" name="idade" min="18" max="99">
+        </label>
+
+        <!-- step: incremento -->
+        <label>Nota (step):
+            <input type="number" name="nota" min="0" max="10" step="0.5">
+        </label>
+
+        <!-- pattern: expressão regular -->
+        <label>CEP (pattern):
+            <input type="text" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000">
+        </label>
+
+        <!-- autofocus: foco automático ao carregar -->
+        <label>Com foco automático (autofocus):
+            <input type="text" name="foco" autofocus>
+        </label>
+
+        <!-- autocomplete: sugere preenchimento automático -->
+        <label>Endereço (autocomplete):
+            <input type="text" name="endereco" autocomplete="on">
+        </label>
+    </form>
+
+    <!-- 
+        Principais atributos do <input>:
+        - required, placeholder, maxlength, minlength, disabled, readonly, value, min, max, step, pattern, autofocus, autocomplete
+    -->
+</body>
+</html>

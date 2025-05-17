@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamento na Web (Web Storage)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        input, button {
+            margin: 6px 0;
+            padding: 4px 8px;
+        }
+        #resultado {
+            margin-top: 16px;
+            color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo de Armazenamento na Web</h2>
+
+    <label for="dado">Digite algo para salvar no localStorage:</label>
+    <input type="text" id="dado">
+    <button onclick="salvar()">Salvar</button>
+    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="limpar()">Limpar</button>
+
+    <div id="resultado"></div>
+
+    <hr>
+
+    <label for="sessao">Digite algo para salvar na sessionStorage:</label>
+    <input type="text" id="sessao">
+    <button onclick="salvarSessao()">Salvar Sessão</button>
+    <button onclick="mostrarSessao()">Mostrar Sessão</button>
+    <button onclick="limparSessao()">Limpar Sessão</button>
+
+    <div id="resultadoSessao"></div>
+
+    <script>
+        // localStorage
+        function salvar() {
+            const valor = document.getElementById('dado').value;
+            localStorage.setItem('meuDado', valor);
+        }
+        function mostrar() {
+            const valor = localStorage.getItem('meuDado');
+            document.getElementById('resultado').innerText = valor ? "Valor salvo: " + valor : "Nada salvo no localStorage.";
+        }
+        function limpar() {
+            localStorage.removeItem('meuDado');
+            document.getElementById('resultado').innerText = "";
+        }
+
+        // sessionStorage
+        function salvarSessao() {
+            const valor = document.getElementById('sessao').value;
+            sessionStorage.setItem('meuDadoSessao', valor);
+        }
+        function mostrarSessao() {
+            const valor = sessionStorage.getItem('meuDadoSessao');
+            document.getElementById('resultadoSessao').innerText = valor ? "Valor salvo na sessão: " + valor : "Nada salvo na sessionStorage.";
+        }
+        function limparSessao() {
+            sessionStorage.removeItem('meuDadoSessao');
+            document.getElementById('resultadoSessao').innerText = "";
+        }
+    </script>
+
+    <!-- 
+        - localStorage: armazena dados sem expiração, mesmo após fechar o navegador.
+        - sessionStorage: armazena dados apenas durante a sessão (fecha o navegador, apaga).
+        - Ambos armazenam pares chave/valor como strings.
+    -->
+</body>
+</html>

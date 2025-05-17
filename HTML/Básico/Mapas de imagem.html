@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas de Imagem</title>
+</head>
+<body>
+    <!-- Um mapa de imagem permite definir áreas clicáveis em uma imagem. -->
+    <h2>Exemplo de Mapa de Imagem</h2>
+    <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Exemplo" usemap="#mapaExemplo">
+
+    <map name="mapaExemplo">
+        <!-- Área retangular -->
+        <area shape="rect" coords="34,44,270,350" href="https://www.example.com/retangulo" alt="Retângulo">
+        <!-- Área circular -->
+        <area shape="circle" coords="337,300,44" href="https://www.example.com/circulo" alt="Círculo">
+        <!-- Área poligonal -->
+        <area shape="poly" coords="290,172,333,250,300,330,250,320" href="https://www.example.com/poligono" alt="Polígono">
+    </map>
+
+    <!-- 
+        - <img usemap="#mapaExemplo"> associa a imagem ao mapa.
+        - <map name="mapaExemplo"> define o mapa.
+        - <area> define as áreas clicáveis (retângulo, círculo, polígono).
+        - coords define as coordenadas da área na imagem.
+    -->
+</body>
+</html>

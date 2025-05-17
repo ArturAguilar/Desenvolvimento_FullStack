@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Formulário em HTML</title>
+    <style>
+        form {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button, output {
+            margin-top: 4px;
+            padding: 4px 8px;
+        }
+        fieldset {
+            margin-top: 20px;
+            border: 2px solid #bbb;
+            border-radius: 6px;
+            padding: 12px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Elementos de Formulário em HTML</h2>
+
+    <form oninput="resultado.value=parseInt(num1.value)+parseInt(num2.value)">
+        <!-- <label> e <input> -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+        <!-- <select>, <option> e <optgroup> -->
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade">
+            <optgroup label="Sudeste">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="poa">Porto Alegre</option>
+                <option value="ctba">Curitiba</option>
+            </optgroup>
+        </select>
+
+        <!-- <textarea> -->
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="3" cols="30" placeholder="Digite sua mensagem"></textarea>
+
+        <!-- <datalist> -->
+        <label for="cor">Cor favorita:</label>
+        <input list="cores" id="cor" name="cor">
+        <datalist id="cores">
+            <option value="Vermelho">
+            <option value="Verde">
+            <option value="Azul">
+            <option value="Amarelo">
+        </datalist>
+
+        <!-- <fieldset> e <legend> -->
+        <fieldset>
+            <legend>Calculadora Simples</legend>
+            <input type="number" id="num1" name="num1" value="0">
+            +
+            <input type="number" id="num2" name="num2" value="0">
+            =
+            <!-- <output> -->
+            <output name="resultado" for="num1 num2">0</output>
+        </fieldset>
+
+        <!-- <button> -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <!-- 
+        Elementos de formulário:
+        - <input>: campo de entrada de dados.
+        - <label>: rótulo para campos.
+        - <select>: lista suspensa.
+        - <option>: opções do select.
+        - <optgroup>: agrupa opções.
+        - <textarea>: área de texto.
+        - <button>: botão.
+        - <fieldset>: agrupa campos relacionados.
+        - <legend>: título do fieldset.
+        - <datalist>: sugestões para input.
+        - <output>: saída de cálculo ou resultado.
+    -->
+</body>
+</html>

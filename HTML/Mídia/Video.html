@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento &lt;video&gt; em HTML</title>
+    <style>
+        video {
+            margin-top: 16px;
+            border: 2px solid #888;
+            border-radius: 8px;
+            background: #000;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo do elemento &lt;video&gt;</h2>
+
+    <!-- O elemento <video> permite incorporar vídeos na página -->
+    <video width="400" controls poster="https://www.w3schools.com/html/pic_trulli.jpg">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <!-- 
+        - <video> incorpora um vídeo.
+        - width define a largura do player.
+        - controls exibe os controles de reprodução.
+        - poster exibe uma imagem antes do vídeo começar.
+        - <source> permite múltiplos formatos para compatibilidade.
+    -->
+</body>
+</html>

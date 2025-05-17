@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrastar e Soltar Arquivos</title>
+    <style>
+        #dropzone {
+            width: 300px;
+            height: 120px;
+            border: 2px dashed #2196f3;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2196f3;
+            font-size: 1.1em;
+            margin-top: 30px;
+            background: #f4faff;
+            transition: background 0.2s;
+        }
+        #dropzone.dragover {
+            background: #e3f2fd;
+        }
+        #arquivos {
+            margin-top: 16px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo de Arrastar e Soltar Arquivos</h2>
+    <div id="dropzone">Arraste e solte arquivos aqui</div>
+    <div id="arquivos"></div>
+
+    <script>
+        const dropzone = document.getElementById('dropzone');
+        const arquivosDiv = document.getElementById('arquivos');
+
+        dropzone.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            dropzone.classList.add('dragover');
+        });
+
+        dropzone.addEventListener('dragleave', function(e) {
+            dropzone.classList.remove('dragover');
+        });
+
+        dropzone.addEventListener('drop', function(e) {
+            e.preventDefault();
+            dropzone.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                let lista = '<strong>Arquivos soltos:</strong><ul>';
+                for (let i = 0; i < files.length; i++) {
+                    lista += `<li>${files[i].name}</li>`;
+                }
+                lista += '</ul>';
+                arquivosDiv.innerHTML = lista;
+            } else {
+                arquivosDiv.innerHTML = "Nenhum arquivo solto.";
+            }
+        });
+    </script>
+
+    <!-- 
+        - O usuário pode arrastar arquivos para a área destacada.
+        - O evento 'drop' captura os arquivos e exibe seus nomes.
+        - Nenhum arquivo é enviado ao servidor neste exemplo.
+    -->
+</body>
+</html>

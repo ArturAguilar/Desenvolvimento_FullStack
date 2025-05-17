@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade position em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Propriedade <code>position</code> em CSS</h1>
+
+    <section>
+        <h2>position: static (padrão)</h2>
+        <div class="exemplo statick">Elemento com position: static</div>
+    </section>
+
+    <section>
+        <h2>position: relative</h2>
+        <div class="exemplo relative">Elemento com position: relative (top: 20px; left: 30px)</div>
+    </section>
+
+    <section>
+        <h2>position: absolute</h2>
+        <div class="container-abs">
+            <div class="exemplo absolute">Elemento com position: absolute (top: 10px; right: 10px)</div>
+            <div class="exemplo bloco">Outro conteúdo na div pai</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>position: fixed</h2>
+        <div class="exemplo fixed">Elemento fixo no canto inferior direito</div>
+    </section>
+
+    <section>
+        <h2>position: sticky</h2>
+        <div class="sticky-container">
+            <div class="exemplo sticky">Elemento sticky (gruda no topo ao rolar)</div>
+            <div style="height: 200px;"></div>
+            <div class="exemplo bloco">Conteúdo após sticky</div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 30px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 18px;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+h2 {
+    color: #1565c0;
+    margin-bottom: 8px;
+}
+
+.exemplo {
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 14px 18px;
+    min-width: 220px;
+    font-size: 1.1em;
+    box-shadow: 1px 1px 4px #eee;
+    display: block;
+}
+
+/* Seleciona todos os links com atributo target */
+a[target] {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+/* Seleciona todos os inputs do tipo "text" */
+input[type="text"] {
+    border: 2px solid #e53935;
+    background: #fffde7;
+}
+
+/* Seleciona todos os elementos com atributo data-exemplo */
+[data-exemplo] {
+    background: #b3e5fc;
+    color: #1565c0;
+}
+
+/* Seleciona todos os elementos cujo atributo href começa com "https" */
+a[href^="https"] {
+    font-weight: bold;
+}
+
+/* Seleciona todos os elementos cujo atributo href termina com ".pdf" */
+a[href$=".pdf"] {
+    color: #e53935;
+}
+
+/* Seleciona todos os elementos cujo atributo class contém "importante" */
+[class*="importante"] {
+    background: #ffe082;
+    border: 2px solid #ffd54f;
+}

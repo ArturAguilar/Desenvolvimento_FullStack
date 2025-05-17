@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Atributos em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seletores de Atributos em CSS</h1>
+
+    <section>
+        <h2>a[target]</h2>
+        <a href="https://www.exemplo.com" target="_blank" class="exemplo">Abrir em nova aba</a>
+        <a href="https://www.exemplo.com" class="exemplo">Abrir na mesma aba</a>
+    </section>
+
+    <section>
+        <h2>input[type="text"]</h2>
+        <input type="text" placeholder="Campo de texto" class="exemplo">
+        <input type="password" placeholder="Senha" class="exemplo">
+    </section>
+
+    <section>
+        <h2>[data-exemplo]</h2>
+        <div class="exemplo" data-exemplo>Div com data-exemplo</div>
+        <div class="exemplo">Div sem data-exemplo</div>
+    </section>
+
+    <section>
+        <h2>a[href^="https"]</h2>
+        <a href="https://www.site.com" class="exemplo">Link HTTPS</a>
+        <a href="http://www.site.com" class="exemplo">Link HTTP</a>
+    </section>
+
+    <section>
+        <h2>a[href$=".pdf"]</h2>
+        <a href="documento.pdf" class="exemplo">Arquivo PDF</a>
+        <a href="imagem.png" class="exemplo">Imagem PNG</a>
+    </section>
+
+    <section>
+        <h2>[class*="importante"]</h2>
+        <div class="exemplo importante">Importante</div>
+        <div class="exemplo muito-importante">Muito Importante</div>
+        <div class="exemplo">Normal</div>
+    </section>
+</body>
+</html>

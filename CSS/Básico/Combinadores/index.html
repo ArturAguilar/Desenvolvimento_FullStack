@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores em CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Combinadores em CSS</h1>
+
+    <section>
+        <h2>Combinador Descendente (espaço)</h2>
+        <div class="exemplo">
+            <p>Parágrafo 1</p>
+            <div>
+                <p>Parágrafo 2 (dentro de div)</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Combinador Filho (&gt;)</h2>
+        <ul class="exemplo">
+            <li>Item filho 1</li>
+            <li>Item filho 2
+                <ul>
+                    <li>Item neto</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Combinador Irmão Adjacente (+)</h2>
+        <div class="exemplo">
+            <h3>Título</h3>
+            <p>Este parágrafo é imediatamente após o título.</p>
+            <p>Este não é afetado pelo combinador +.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Combinador Irmão Geral (~)</h2>
+        <div class="exemplo">
+            <span>Primeiro span</span>
+            <span>Segundo span</span>
+            <p>Parágrafo após spans</p>
+            <p>Outro parágrafo após spans</p>
+        </div>
+    </section>
+</body>
+</html>

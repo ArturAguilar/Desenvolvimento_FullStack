@@ -1,0 +1,7 @@
+{
+  "nome": "Maria",
+  "idade": 30,
+  "ativo": false,
+  "notas": [9, 7, 8],
+  "endereco": null
+}

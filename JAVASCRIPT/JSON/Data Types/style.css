@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 40px;
+}
+h1 {
+    color: #333;
+}
+.type-list {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+.type {
+    margin-bottom: 18px;
+}
+.type code {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+pre {
+    background: #222;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+}

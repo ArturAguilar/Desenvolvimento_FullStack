@@ -1,0 +1,8 @@
+#boxAnimado {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    position: relative;
+    left: 0;
+    transition: background 0.5s;
+}

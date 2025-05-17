@@ -1,0 +1,13 @@
+audio {
+    margin-top: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+video {
+    margin-top: 16px;
+    border: 2px solid #888;
+    border-radius: 8px;
+    background: #000;
+    max-width: 100%;
+}

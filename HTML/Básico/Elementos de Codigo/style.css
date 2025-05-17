@@ -1,0 +1,33 @@
+code,
+kbd,
+samp,
+var {
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    background: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+pre {
+    background: #222;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    overflow-x: auto;
+}
+
+kbd {
+    background: #e2e2e2;
+    border: 1px solid #bbb;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+samp {
+    color: #00796b;
+}
+
+var {
+    font-style: italic;
+    color: #c62828;
+}

@@ -1,0 +1,10 @@
+#local {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+button {
+    padding: 6px 14px;
+    margin-top: 10px;
+}

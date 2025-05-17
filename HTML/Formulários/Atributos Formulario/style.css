@@ -1,0 +1,16 @@
+form {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select,
+button {
+    margin-top: 4px;
+    padding: 4px 8px;
+}

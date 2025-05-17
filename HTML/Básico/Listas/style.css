@@ -1,0 +1,21 @@
+ul,
+ol,
+dl {
+    margin-bottom: 20px;
+}
+
+li,
+dt,
+dd {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 20px;
+    color: #555;
+}

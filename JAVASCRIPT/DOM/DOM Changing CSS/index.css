@@ -1,0 +1,8 @@
+#box {
+    background: #eee;
+    color: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}

@@ -1,0 +1,23 @@
+#dropzone {
+    width: 300px;
+    height: 120px;
+    border: 2px dashed #2196f3;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2196f3;
+    font-size: 1.1em;
+    margin-top: 30px;
+    background: #f4faff;
+    transition: background 0.2s;
+}
+
+#dropzone.dragover {
+    background: #e3f2fd;
+}
+
+#arquivos {
+    margin-top: 16px;
+    font-family: Arial, sans-serif;
+}

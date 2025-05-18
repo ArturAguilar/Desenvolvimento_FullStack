@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livros>
+    <livro>
+        <titulo>PHP Básico</titulo>
+        <autor>Maria Silva</autor>
+    </livro>
+    <livro>
+        <titulo>MySQL para Iniciantes</titulo>
+        <autor>João Souza</autor>
+    </livro>
+    <livro>
+        <titulo>JavaScript Essencial</titulo>
+        <autor>Maria Silva</autor>
+    </livro>
+</livros>

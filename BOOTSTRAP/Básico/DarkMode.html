@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Exemplo de Dark Mode Bootstrap 5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body.dark-mode {
+      background-color: #212529 !important;
+      color: #f8f9fa !important;
+    }
+    .dark-mode .card,
+    .dark-mode .accordion,
+    .dark-mode .list-group-item {
+      background-color: #343a40 !important;
+      color: #f8f9fa !important;
+      border-color: #454d55 !important;
+    }
+    .dark-mode .navbar,
+    .dark-mode .offcanvas {
+      background-color: #212529 !important;
+    }
+    .dark-mode .btn {
+      border-color: #f8f9fa !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+    <h1>Dark Mode no Bootstrap 5</h1>
+    <button id="toggleDark" class="btn btn-dark mb-4">Ativar/Desativar Dark Mode</button>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        Este é um card de exemplo para o modo escuro.
+      </div>
+    </div>
+
+    <ul class="list-group mb-3">
+      <li class="list-group-item">Item 1</li>
+      <li class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
+    </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar Dark</a>
+      </div>
+    </nav>
+  </div>
+  <script>
+    document.getElementById('toggleDark').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>

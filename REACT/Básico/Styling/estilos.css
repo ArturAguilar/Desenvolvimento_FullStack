@@ -1,0 +1,14 @@
+.titulo {
+  color: #1976d2;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.botao {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

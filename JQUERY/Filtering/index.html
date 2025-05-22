@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Filtering</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="Filtering.js"></script>
+    <style>
+        .highlight {
+            background: #b2dfdb;
+            border: 2px solid #00796b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Filtering no jQuery</h1>
+    <ul id="lista">
+        <li>Item 1</li>
+        <li class="especial">Item 2</li>
+        <li>Item 3</li>
+        <li class="especial">Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <button id="btn-first">first()</button>
+    <button id="btn-last">last()</button>
+    <button id="btn-eq">eq(2)</button>
+    <button id="btn-filter">filter('.especial')</button>
+    <button id="btn-not">not('.especial')</button>
+</body>
+</html>
